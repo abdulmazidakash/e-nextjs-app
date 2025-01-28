@@ -29,15 +29,22 @@ export default function ServiceDetailPage({ params }) {
 
 	const singleData = data.find((d) => d._id == id)
 
-  return (
-	<div>
-		<h1>ServiceDetailPage</h1>
-		<div className='flex items-center'>
-			<p>ID: {id}</p>
-
-			<p>{singleData.service_name}</p>
-			<img className='w-[400px]' src={singleData.service_image} alt="" />
+  if(singleData){
+	return (
+		<div>
+			<h1>ServiceDetailPage</h1>
+			<div className='flex items-center'>
+				<p>ID: {id}</p>
+	
+				<p>{singleData.service_name}</p>
+				<img className='w-[400px]' src={singleData.service_image} alt="" />
+			</div>
 		</div>
-	</div>
-  )
+	  )
+  }
+  else{
+	return <>
+		<p>Not found</p>
+	</>
+  }
 }
