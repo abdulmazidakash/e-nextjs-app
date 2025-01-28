@@ -31,7 +31,7 @@ export default function ServiceDetailPage({ params }) {
 
   if(singleData){
 	return (
-		<div>
+		<div className='w-11/12 mx-auto'>
 			<h1>ServiceDetailPage</h1>
 			<div className='flex items-center'>
 				<p>ID: {id}</p>
