@@ -18,6 +18,8 @@ export default function Navbar() {
 					<Link href={'/about'}><li>About</li></Link>
 					<Link href={'/posts'}><li>Posts</li></Link>
 					<Link href={'/meals'}><li>Meals</li></Link>
+					<Link href={'/products'}><li>Products</li></Link>
+					<Link href={'/products/add'}><li>Add Products</li></Link>
 					</ul>
 				</nav>
 		   </div>
