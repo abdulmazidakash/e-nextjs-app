@@ -35,11 +35,11 @@ export default async  function SingleMealsPage({ params}) {
 	const singleMeal = await fetchSingleMeals(p?.id);
 
   return (
-	<>
-	<div className=''>
+	
+	<div>
 		<p>{JSON.stringify(singleMeal)}</p>
 	</div>
-	</>
+	
 	
   )
 }
