@@ -1,9 +1,19 @@
+import { getServerSession } from "next-auth";
+import LoginButton from "./components/LoginButton";
+import UserInfo from "./components/UserInfo";
+import { authOptions } from "./api/auth/[...nextauth]/route";
 
 
-export default function Home() {
+export default async function Home() {
+
+  const session = await getServerSession(authOptions)
   return (
     <div>
          <h1>Hello World</h1>
+         <LoginButton/>
+         <p className="font-bold text-xl">From client component</p>
+         <UserInfo/>
+         {JSON.stringify(session)}
     </div>
   );
 }

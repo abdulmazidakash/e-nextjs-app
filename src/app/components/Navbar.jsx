@@ -20,6 +20,7 @@ export default function Navbar() {
 					<Link href={'/meals'}><li>Meals</li></Link>
 					<Link href={'/products'}><li>Products</li></Link>
 					<Link href={'/products/add'}><li>Add Products</li></Link>
+					<Link href={'/register'}><li>Register</li></Link>
 					</ul>
 				</nav>
 		   </div>
